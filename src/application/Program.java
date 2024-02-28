@@ -28,12 +28,14 @@ public class Program {
 
 		double media = estudante.media();
 
+		System.out.println("Nota final de " + estudante.media());
+
 		if (media < 60.0) {
-			System.out.println("Nota final de " + estudante.media());
+
 			System.out.println("Nao foi aprovador");
 			System.out.println("Falta de " + String.format("%.2f", estudante.faltandoPontos()) + "pontos!");
 		} else {
-			System.out.println("Nota final de " + estudante.media());
+
 			System.out.println("Estudante Aprovado !");
 		}
 
